@@ -66,11 +66,9 @@ const handleChange = (
      setLoading(true);
    
      try {
-       const res=await API.post("/auth/register", formData)
-
-       console.log("Form Data:", res.data);
-       localStorage.setItem("user", JSON.stringify(formData));
-       Success(res.data.message || "Form Submitted Successfully")
+ 
+        localStorage.setItem("user", JSON.stringify(formData));
+       Success("Form Submitted Successfully")
        navigate("/welcome")
        setTimeout(() => {
          setLoading(false);

@@ -68,6 +68,13 @@ const MultiStepForm: React.FC = () => {
         domainArray.push(localvalue[i].domainURL)
     }
     console.log(domainArray)
+     useEffect(() => {
+        const savedFormData = localStorage.getItem("formData");
+        if (savedFormData) {
+            setFormData(JSON.parse(savedFormData));
+        }
+    }, []);
+
     const [formData, setFormData] = useState<FormDataType>({
         name: "",
         tagline: "",
@@ -89,6 +96,9 @@ const MultiStepForm: React.FC = () => {
         content:fonts[0]
 
     });
+     useEffect(() => {
+            localStorage.setItem("formData", JSON.stringify(formData));
+        }, [formData]);
 
     const [errors, setErrors] = useState<Partial<FormDataType>>({});
    
@@ -135,6 +145,8 @@ const MultiStepForm: React.FC = () => {
     const formSubmit = () => {
         console.log("✅ Final formData", formData);
         alert("Form submitted!");
+        localStorage.removeItem("formData");
+
     };
 
 

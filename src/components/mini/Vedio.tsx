@@ -1,5 +1,6 @@
 import { GiSpeaker } from "react-icons/gi";
 import { CallToAction } from "./CallToAction";
+import dashboard from "../../assets/rbg/setscreenShort.png";
 export const Video = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full   space-y-[20px]">
@@ -9,19 +10,13 @@ export const Video = () => {
                         <span className="mx-1">
                             <GiSpeaker size={20} />
                         </span>
-                         <span className="text-[12px] font-normal"> WATCH DEMO VIDEO HERE (SOUND ON!)</span>
+                         <span className="text-[12px] font-normal">WATCH SCREEN SHORT HERE (DASHBOARD)</span>
                     </div>
                 </div>
-                <div className="h-[95%] w-[100%]">
-                    <iframe
-                        className="w-full h-full block bg-cover"
-                        src="https://www.youtube.com/embed/uP5pZ2Msl2c?si=RuzzjeEjHB-Wk6KE"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                    ></iframe>
+                <div className="h-[100%] border w-[100%] p-1">
+                     
+                    <img src={dashboard} className="border h-[95%] 
+                    w-[95%]" alt="dashboardFull" />
                 </div>
             </div>
           <CallToAction

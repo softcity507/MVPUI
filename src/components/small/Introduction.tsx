@@ -1,6 +1,6 @@
 import { Description } from "../mini/Description"
 import { Hero } from "../mini/Hero"
-import aiFunel from "../../assets/rbg/AIfunels.png"
+import aiFunel from "../../assets/rbg/setscreenShort.png"
 import { Heading } from "../mini/Heading"
 import { CallToAction } from "../mini/CallToAction"
 
@@ -14,8 +14,9 @@ export const Introduction = () => {
         subText="Generate your sales funnels with a click of a button, using AI."
       />
 
-      <div className="mx-5 flex justify-center">
-        <img src={aiFunel} alt="aiFunel" className="m-5 rounded-[20px] w-[100%] h-[100%]" />
+      <div className="p-1 bg-blue-50 flex justify-center rounded-[7px] border-gray-400">
+        <img src={aiFunel} alt="aiFunel" className="
+        rounded-[7px] w-[100%] h-[100%]" />
       </div>
       
       <Heading text="Get your first 3 funnels free of charge!"

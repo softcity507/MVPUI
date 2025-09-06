@@ -46,11 +46,7 @@ const handleChange = (
      setLoading(true);
        
      try {
-       const res=await API.post("/auth/login", formData)
-       console.log("Form Data:", res.data);
-       localStorage.setItem("user", JSON.stringify(res.data.user));
-       localStorage.setItem("user", JSON.stringify(res.data.token));
-       Success("Form Submitted Successfully")
+        Success("Form Submitted Successfully")
        navigate("/confirmed/template")
        setTimeout(() => {
          setLoading(false);

@@ -141,10 +141,12 @@ const MultiStepFormBrand: React.FC = () => {
     };
 
 
-
+    // For Backend Funtionality
     const formSubmit = () => {
         console.log("✅ Final formData", formData);
         alert("Form submitted!");
+        localStorage.removeItem("formData");
+
     };
 
 
