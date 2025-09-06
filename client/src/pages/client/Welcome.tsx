@@ -1,7 +1,7 @@
 import { Description } from "../../components/mini/Description"
 import { Heading } from "../../components/mini/Heading"
 import Navbar from "../../components/navbar/Navbar"
-import image from "../../assets/rbg/AIfunels.png"
+import image from "../../assets/rbg/setscreenShort.png"
 import Footer from "../../components/footer/Footer"
 import API from "../../utils/api"
 import { Success } from "../utils/Tostify"
@@ -38,7 +38,7 @@ const handleChange = (
   };
    useEffect(()=>{
       setTimeout(()=>{
-       navigate("/confirmed/template")
+      //  navigate("/confirmed/template")
         setDialogOpen(true)
       },3000)
    },[])
