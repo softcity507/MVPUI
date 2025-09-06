@@ -38,6 +38,7 @@ const handleChange = (
   };
    useEffect(()=>{
       setTimeout(()=>{
+       navigate("/confirmed/template")
         setDialogOpen(true)
       },3000)
    },[])

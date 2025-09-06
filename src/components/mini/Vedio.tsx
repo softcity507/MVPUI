@@ -16,7 +16,7 @@ export const Video = () => {
                 <div className="h-[100%] border w-[100%] p-1">
                      
                     <img src={dashboard} className="border h-[95%] 
-                    w-[95%]" alt="dashboardFull" />
+                    w-[100%]" alt="dashboardFull" />
                 </div>
             </div>
           <CallToAction
